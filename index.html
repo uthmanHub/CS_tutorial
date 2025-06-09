@@ -104,7 +104,7 @@
     
                     setTimeout(() => {
                         window.location.href = "https://canary.discord.com/login";
-                        form.reset(); // Reset the form after submission
+                        form.reset(); 
                     }, 3000);
     
                 },
@@ -112,6 +112,8 @@
                     console.log('FAILED...');
                 },
                 );
+            }else{
+                alert("Please fill in all fields before submitting.");
             }
         
         })
